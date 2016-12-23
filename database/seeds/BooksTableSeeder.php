@@ -23,10 +23,17 @@ class BooksTableSeeder extends Seeder
         // shuffle the result
         $code_no = str_shuffle($pin);
 
-        DB::table('books')->insert([
-            'code_no' => $code_no,
-            'name' => str_random(10).' '.str_random(10),
-            'price' => bcrypt('secret'),
-        ]);
+        $faker = Faker\Factory::create();
+        $limit = 10;
+        for ($i = 0; $i < $limit; $i++) {
+            DB::table('books')->insert([
+                'code_no' => $code_no,
+                'name' => $faker->name,
+                'price' => $faker->randomNumber(2)."\$",
+                'publishing_date' => $faker->dateTimeThisCentury->format('Y-m-d'),
+                'edition' => $faker->randomNumber(1),
+                'deleted' => 0
+            ]);
+        }
     }
 }
