@@ -11,7 +11,7 @@ class PublicController extends Controller
     public function index()
     {
         $book = Book::orderBy('created_at', 'asc')->get();
-        return view('home', [
+        return view('public', [
             'book' => $book
         ]);
     }
