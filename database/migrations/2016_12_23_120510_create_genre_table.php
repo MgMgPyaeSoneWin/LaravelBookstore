@@ -14,6 +14,7 @@ class CreateGenreTable extends Migration
     public function up()
     {
         //
+        Schema::dropIfExists('genre');
         Schema::create('genre', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable(false);
@@ -28,5 +29,6 @@ class CreateGenreTable extends Migration
     public function down()
     {
         //
+        Schema::dropIfExists('genre');
     }
 }
