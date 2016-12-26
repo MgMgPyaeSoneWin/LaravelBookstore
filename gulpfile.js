@@ -21,4 +21,5 @@ require('laravel-elixir-vue-2');
 elixir(function(mix) {
     mix.sass('app.scss')
         .version('css/app.css');
+    mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/build/fonts/bootstrap');
 });

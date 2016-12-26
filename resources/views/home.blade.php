@@ -16,26 +16,27 @@
             {{--</div>--}}
         {{--</div>--}}
     {{--</div>--}}
-    
+
     <div class="container">
         <div class="row">
             <div class="col-sm-3 col-md-3">
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"><span
-                                            class="glyphicon glyphicon-folder-close">
-                            </span>Content</a>
-                            </h4>
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                        <span class="glyphicon glyphicon-folder-close"></span>Author
+                                    </a>
+                                    <button type="button" class="btn btn-primary btn-sm">+</button>
+                                </h4>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
                                 <table class="table">
                                     <tr>
                                         <td>
-                                            <span class="glyphicon glyphicon-pencil text-primary"></span><a
-                                                    href="http://www.jquery2dotnet.com">Articles</a>
+                                            <span class="glyphicon glyphicon-pencil text-primary"></span>
+                                            <a href="http://www.jquery2dotnet.com">Articles</a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -64,9 +65,10 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><span
-                                            class="glyphicon glyphicon-th">
-                            </span>Modules</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                    <span class="glyphicon glyphicon-th"></span> Publisher
+                                </a>
+                                <button type="button" class="btn btn-primary btn-sm">+</button>
                             </h4>
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse">
@@ -100,9 +102,11 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><span
-                                            class="glyphicon glyphicon-user">
-                            </span>Account</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    Genre
+                                </a>
+                                <button type="button" class="btn btn-primary btn-sm">+</button>
                             </h4>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">
@@ -138,9 +142,11 @@
                     <div class="panel panel-default">
                         <div class="panel-heading">
                             <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour"><span
-                                            class="glyphicon glyphicon-file">
-                            </span>Reports</a>
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                    <span class="glyphicon glyphicon-file"></span>
+                                    Reports
+                                </a>
+                             <button type="button" class="btn btn-primary btn-sm">+</button>
                             </h4>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
