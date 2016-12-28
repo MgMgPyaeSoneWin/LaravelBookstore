@@ -11,13 +11,29 @@ class authorTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-        $faker = Faker\Factory::create();
-        $limit = 10;
-        for ($i = 0; $i < $limit; $i++) {
-            DB::table('author')->insert([
-                'name' => $faker->name
-            ]);
-        }
+        DB::table('author')->insert([
+            'name' => 'Brian Krebs'
+        ]);
+
+        DB::table('author')->insert([
+            'name' => 'Brad Stone'
+        ]);
+
+        DB::table('author')->insert([
+            'name' => 'Steve Lohr'
+        ]);
+
+        DB::table('author')->insert([
+            'name' => 'Adam Clarke'
+        ]);
+
+        DB::table('author')->insert([
+            'name' => 'Laszlo Bock'
+        ]);
+
+
+        DB::table('author')->insert([
+            'name' => 'Charles Petzold'
+        ]);
     }
 }

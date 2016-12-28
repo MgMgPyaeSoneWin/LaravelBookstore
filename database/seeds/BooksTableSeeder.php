@@ -39,7 +39,7 @@ class BooksTableSeeder extends Seeder
 //            ]);
         DB::table('books')->insert([
                 'code_no' => 'A001',
-                'name' => 'The River of Lost Footsteps: Histories of Burma',
+                'name' => 'Spam Nation: The Inside Story of Organized Cybercrime-from Global Epidemic to Your Front Door',
                 'author_id' => $faker->randomNumber(1)+1,
                 'publisher_id' => $faker->randomNumber(1)+1,
                 'genre_id' => $faker->randomNumber(1)+1,
