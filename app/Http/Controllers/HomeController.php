@@ -24,7 +24,11 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $book = Book::orderBy('created_at', 'asc')->get();
+//        $book = Book::orderBy('created_at', 'asc')->get();
+//        $book = Book::with('app\author')->get();
+//        $book = Book::with('app\genre')->get();
+        $book = Book::find(1)->genre->get()->toArray();
+        var_dump($book);die();
         return view('home', [
             'book' => $book
         ]);

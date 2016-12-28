@@ -1,21 +1,6 @@
 @extends('layouts.app')
 
 @section('content')
-    {{--<div class="container">--}}
-        {{--<div class="row">--}}
-            {{--<div class="col-md-8 col-md-offset-2">--}}
-                {{--<div class="panel panel-default">--}}
-                    {{--<div class="panel-heading">Dashboard</div>--}}
-                    {{--<div class="panel-body">--}}
-                        {{--@foreach ($book as $b)--}}
-                            {{--{{ $b->name }}<br/>--}}
-                            {{--<br/>--}}
-                        {{--@endforeach--}}
-                    {{--</div>--}}
-                {{--</div>--}}
-            {{--</div>--}}
-        {{--</div>--}}
-    {{--</div>--}}
 
     <div class="container">
         <div class="row">
@@ -23,12 +8,18 @@
                 <div class="panel-group" id="accordion">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-                                        <span class="glyphicon glyphicon-folder-close"></span>Author
-                                    </a>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            <span class="glyphicon glyphicon-folder-close"></span>Author
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="col-md-4" style="text-align: right">
                                     <button type="button" class="btn btn-primary btn-sm">+</button>
-                                </h4>
+                                </div>
+                            </div>
                         </div>
                         <div id="collapseOne" class="panel-collapse collapse in">
                             <div class="panel-body">
@@ -64,12 +55,21 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                                    <span class="glyphicon glyphicon-th"></span> Publisher
-                                </a>
-                                <button type="button" class="btn btn-primary btn-sm">+</button>
-                            </h4>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            <span class="glyphicon glyphicon-th"></span> Publisher
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="col-md-4" style="text-align: right">
+                                    <button type="button" class="btn btn-primary btn-sm">+</button>
+                                </div>
+
+                            </div>
+
+
                         </div>
                         <div id="collapseTwo" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -101,13 +101,19 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                                    <span class="glyphicon glyphicon-user"></span>
-                                    Genre
-                                </a>
-                                <button type="button" class="btn btn-primary btn-sm">+</button>
-                            </h4>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                            <span class="glyphicon glyphicon-user"></span>
+                                            Genre
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="col-md-4" style="text-align: right">
+                                    <button type="button" class="btn btn-primary btn-sm">+</button>
+                                </div>
+                            </div>
                         </div>
                         <div id="collapseThree" class="panel-collapse collapse">
                             <div class="panel-body">
@@ -141,13 +147,19 @@
                     </div>
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h4 class="panel-title">
-                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                                    <span class="glyphicon glyphicon-file"></span>
-                                    Reports
-                                </a>
-                             <button type="button" class="btn btn-primary btn-sm">+</button>
-                            </h4>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                            <span class="glyphicon glyphicon-file"></span>
+                                            Reports
+                                        </a>
+                                    </h4>
+                                </div>
+                                <div class="col-md-4" style="text-align: right">
+                                    <button type="button" class="btn btn-primary btn-sm">+</button>
+                                </div>
+                            </div>
                         </div>
                         <div id="collapseFour" class="panel-collapse collapse">
                             <div class="panel-body">
