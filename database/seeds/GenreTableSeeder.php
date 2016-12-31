@@ -11,13 +11,24 @@ class GenreTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-        $faker = Faker\Factory::create();
-        $limit = 10;
-        for ($i = 0; $i < $limit; $i++) {
-            DB::table('genre')->insert([
-                'name' => $faker->name
-            ]);
-        }
+        DB::table('genre')->insert([
+            'name' => 'Cyber Security'
+        ]);
+
+        DB::table('genre')->insert([
+            'name' => 'E-commerce'
+        ]);
+
+        DB::table('genre')->insert([
+            'name' => 'Big Data'
+        ]);
+
+        DB::table('genre')->insert([
+            'name' => 'SEO'
+        ]);
+
+        DB::table('genre')->insert([
+            'name' => 'Code'
+        ]);
     }
 }

@@ -11,13 +11,21 @@ class PublisherTableSeeder extends Seeder
      */
     public function run()
     {
-        //
-        $faker = Faker\Factory::create();
-        $limit = 10;
-        for ($i = 0; $i < $limit; $i++) {
-            DB::table('publisher')->insert([
-                'name' => $faker->name
-            ]);
-        }
+
+        DB::table('publisher')->insert([
+            'name' => 'Simon & Schuster'
+        ]);
+
+        DB::table('publisher')->insert([
+            'name' => 'HarperCollins'
+        ]);
+
+        DB::table('publisher')->insert([
+            'name' => 'Penguin Random House'
+        ]);
+
+        DB::table('publisher')->insert([
+            'name' => 'Hachette Livre'
+        ]);
     }
 }
