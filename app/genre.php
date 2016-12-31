@@ -11,6 +11,6 @@ class genre extends Model
     protected $table = 'genre';
 
     public function book() {
-        return $this->hasMany(Book::class);
+        return $this->hasMany(Book::class,'genre_id');
     }
 }

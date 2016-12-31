@@ -27,5 +27,6 @@ class PublisherTableSeeder extends Seeder
         DB::table('publisher')->insert([
             'name' => 'Hachette Livre'
         ]);
+
     }
 }

@@ -3,6 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Book;
+use App\author;
+use App\genre;
+use App\publisher;
+
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -24,10 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-//        $book = Book::orderBy('created_at', 'asc')->get();
-//        $book = Book::with('app\author')->get();
-//        $book = Book::with('app\genre')->get();
-        $book = Book::find(1)->genre->get()->toArray();
+        $book = Book::with('genre','author','publisher')->get()->toArray();
         var_dump($book);die();
         return view('home', [
             'book' => $book

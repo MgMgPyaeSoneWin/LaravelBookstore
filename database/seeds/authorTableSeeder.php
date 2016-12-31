@@ -12,8 +12,8 @@ class authorTableSeeder extends Seeder
     public function run()
     {
         DB::table('author')->insert([
-            'name' => 'Brian Krebs'
-        ]);
+        'name' => 'Brian Krebs'
+    ]);
 
         DB::table('author')->insert([
             'name' => 'Brad Stone'
