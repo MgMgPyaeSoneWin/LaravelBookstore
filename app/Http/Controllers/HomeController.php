@@ -28,8 +28,7 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $book = Book::with('genre','author','publisher')->get()->toArray();
-        var_dump($book);die();
+        $book = Book::with('genre','author','publisher')->get();
         return view('home', [
             'book' => $book
         ]);

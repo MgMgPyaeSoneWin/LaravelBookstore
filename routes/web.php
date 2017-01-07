@@ -13,6 +13,26 @@
 
 Route::get('/', 'PublicController@index');
 
+Route::get('/datatables', function () {
+    return view('datatables');
+});
+
+Route::get('/users/serverSide', [
+    'as'   => 'users.serverSide',
+    'uses' => function () {
+        $users = App\User::select(['id', 'name', 'email', 'publishing_date']);
+        return Datatables::of($users)->make();
+    }
+]);
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
+
+Route::get('/users/serverSide', [
+    'as'   => 'users.serverSide',
+    'uses' => function () {
+        $book = App\Book::select(['id', 'name', 'price', 'publishing_date']);
+        return Datatables::of($book)->make();
+    }
+]);
