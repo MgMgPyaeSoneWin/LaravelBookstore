@@ -70,7 +70,7 @@
         <tr>
             <th>ID</th>
             <th>Name</th>
-            <th>Email</th>
+            <th>Price</th>
             <th>Created at</th>
         </tr>
         </thead>

@@ -25,6 +25,13 @@ Route::get('/users/serverSide', [
     }
 ]);
 
+Route::get('/author','AuthorController@index');
+Route::post('/author_create','AuthorController@create');
+
+
+//Route::get('/author', ['as' => 'author', 'uses' => 'AuthorController@index']);
+//Route::get('/author', ['as' => 'author_create', 'uses' => 'AuthorController@create']);
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');

@@ -15,6 +15,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A001',
             'name' => 'Spam Nation: The Inside Story of Organized Cybercrime-from Global Epidemic to Your Front Door',
+            'image' => 'a.jpg',
             'author_id' => 1,
             'publisher_id' => 1,
             'genre_id' => 1,
@@ -27,6 +28,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A002',
             'name' => 'The Everything Store: Jeff Bezos and the Age of Amazon',
+            'image' => 'b.jpg',
             'author_id' => 2,
             'publisher_id' => 1,
             'genre_id' => 2,
@@ -39,6 +41,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A003',
             'name' => 'The Upstarts: How Uber, Airbnb, and the Killer Companies of the New Silicon Valley Are Changing the World',
+            'image' => 'c.jpg',
             'author_id' => 2,
             'publisher_id' => 2,
             'genre_id' => 2,
@@ -51,6 +54,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A004',
             'name' => 'Data-ism: The Revolution Transforming Decision Making, Consumer Behavior, and Almost Everything Else',
+            'image' => 'd.jpg',
             'author_id' => 3,
             'publisher_id' => 2,
             'genre_id' => 3,
@@ -63,6 +67,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A005',
             'name' => 'Dit is big data (Dutch Edition)',
+            'image' => 'e.jpg',
             'author_id' => 3,
             'publisher_id' => 3,
             'genre_id' => 3,
@@ -75,6 +80,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A006',
             'name' => 'SEO 2017: Learn search engine optimization with smart internet marketing strategies',
+            'image' => 'f.jpg',
             'author_id' => 4,
             'publisher_id' => 3,
             'genre_id' => 4,
@@ -87,6 +93,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A007',
             'name' => 'Work Rules!: Insights from Inside Google That Will Transform How You Live and Lead',
+            'image' => 'g.jpg',
             'author_id' => 5,
             'publisher_id' => 3,
             'genre_id' => 2,
@@ -99,6 +106,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A008',
             'name' => 'Code: The Hidden Language of Computer Hardware and Software',
+            'image' => 'h.jpg',
             'author_id' => 6,
             'publisher_id' => 4,
             'genre_id' => 5,
@@ -111,6 +119,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A009',
             'name' => 'CApplications = Code + Markup: A Guide to the Microsoft® Windows® Presentation Foundation: A Guide to the Microsoft Windows Presentation Foundation (Developer Reference)',
+            'image' => 'i.jpg',
             'author_id' => 6,
             'publisher_id' => 4,
             'genre_id' => 5,
@@ -123,6 +132,7 @@ class BooksTableSeeder extends Seeder
         DB::table('books')->insert([
             'code_no' => 'A010',
             'name' => 'The Annotated Turing: A Guided Tour Through Alan Turing\'s Historic Paper on Computability and the Turing Machine',
+            'image' => 'k.jpg',
             'author_id' => 6,
             'publisher_id' => 4,
             'genre_id' => 5,

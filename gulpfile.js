@@ -13,13 +13,27 @@ require('laravel-elixir-vue-2');
  |
  */
 
-elixir((mix) => {
-    mix.sass('app.scss')
-       .webpack('app.js');
-});
+// elixir((mix) => {
+//     mix.sass('app.scss')
+//        .webpack('app.js');
+// });
 
 elixir(function(mix) {
+    var bootstrapPath = 'node_modules/bootstrap-sass/assets';
     mix.sass('app.scss')
-        .version('css/app.css');
-    mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/build/fonts/bootstrap');
+        .copy(bootstrapPath + '/fonts', 'public/fonts')
+        .copy(bootstrapPath + '/javascripts/bootstrap.min.js', 'public/js');
+});
+//
+// elixir(function(mix) {
+//     mix.sass('app.scss')
+//         .version('css/app.css');
+//     mix.copy('node_modules/bootstrap-sass/assets/fonts/bootstrap/','public/build/fonts/bootstrap');
+// });
+
+elixir(function(mix) {
+    mix.styles([
+        'custom.css',
+        'card.css'
+    ]);
 });
